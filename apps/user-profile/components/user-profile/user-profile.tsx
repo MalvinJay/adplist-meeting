@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 // import Image from 'next/image';
 import { Button } from '@alpha/ui';
+import { LogOut } from 'react-feather';
 
 /* eslint-disable-next-line */
 export interface UserProfileProps { }
@@ -29,14 +30,18 @@ export function UserProfile(props: UserProfileProps) {
                   <div className="relative w-full">
                     <img
                       src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg"
-                      className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"
+                      // width={800}
+                      // height={800}
+                      className="absolute right-0 shadow-xl rounded-full h-auto align-middle border-none -my-16 -ml-20 lg:-ml-16 max-w-[150px]"
                       alt="pic"
                     />
                   </div>
                 </div>
                 <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-                  <div className="py-6 px-3 mt-32 sm:mt-0">
-                    <Button className='btn-primary'>Connect</Button>
+                  <div className="py-6 px-3 mt-32 sm:mt-0 flex justify-end">
+                    <Button className='btn-primary !bg-red-400'>
+                      <LogOut />
+                    </Button>
                   </div>
                 </div>
                 <div className="w-full lg:w-4/12 px-4 lg:order-1">
