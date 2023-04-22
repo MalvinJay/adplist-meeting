@@ -3,7 +3,7 @@ import { Loader } from './Loader';
 
 const Story: ComponentMeta<typeof Loader> = {
   component: Loader,
-  title: 'Badge',
+  title: 'Loader',
 };
 export default Story;
 
