@@ -29,7 +29,7 @@ export function UserProfile({ user }) {
                 <div className="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                   <div className="relative w-full">
                     <img
-                      src={user.picture || "https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg"}
+                      src={user?.picture ?? "https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg"}
                       className="absolute right-[25%] shadow-xl rounded-full h-auto align-middle border-none -my-16 -ml-20 lg:-ml-16 w-[150px]"
                       alt="pic"
                     />
@@ -64,10 +64,10 @@ export function UserProfile({ user }) {
                 </h3>
                 <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
                   <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                  <i className='opacity-50'>{user.nickname && `@${user.nickname}`}</i>
+                  <i className='opacity-50'>{user?.nickname && `@${user?.nickname}`}</i>
                 </div>
                 <div className="mb-2 text-blueGray-600 mt-10">
-                  {user.email_verified ?
+                  {user?.email_verified ?
                     <div className='flex justify-center'><CheckCircle /> <span className='pl-2 font-bold'>Verified</span></div>
                     :
                     <div className='flex justify-center'><XCircle /> <span className='pl-2 font-bold'>Not Verified</span></div>
