@@ -16,7 +16,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'demos.creative-tim.com',
         port: '',
-        pathname: '',
+        pathname: '/',
       }
     ]
   }

@@ -23,6 +23,8 @@ export interface ConfirmProps extends ReactConfirmProps {
    * confirm message
    */
   message: any;
+  show: boolean;
+  proceed: () => void;
 }
 
 const Dialog = ({ show, proceed, message, header, buttons }: ConfirmProps) => {
@@ -46,7 +48,7 @@ const Dialog = ({ show, proceed, message, header, buttons }: ConfirmProps) => {
           </Button>
           <Button
             className="btn-primary"
-            onClick={() => proceed('true')}
+            onClick={() => proceed()}
             {...buttons?.proceed}
           >
             {buttons?.proceed?.value || 'Proceed'}
