@@ -6,7 +6,7 @@
 
 ## Development server
 
-Run `nx serve untitled` for a dev server. Navigate to http://localhost:10001/. The app will automatically reload if you change any of the source files.
+Run `nx serve meeting-app` for a dev server. Navigate to http://localhost:10001/. The app will automatically reload if you change any of the source files.
 
 ## Understand this workspace
 

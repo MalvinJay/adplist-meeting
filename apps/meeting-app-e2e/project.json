@@ -1,19 +1,19 @@
 {
-  "name": "untitled-e2e",
+  "name": "meeting-app-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/untitled-e2e/src",
+  "sourceRoot": "apps/meeting-app-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/untitled-e2e/cypress.config.ts",
-        "devServerTarget": "untitled:serve:development",
+        "cypressConfig": "apps/meeting-app-e2e/cypress.config.ts",
+        "devServerTarget": "meeting-app:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "untitled:serve:production"
+          "devServerTarget": "meeting-app:serve:production"
         }
       }
     },
@@ -21,10 +21,10 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/untitled-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/meeting-app-e2e/**/*.{js,ts}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": ["untitled"]
+  "implicitDependencies": ["meeting-app"]
 }

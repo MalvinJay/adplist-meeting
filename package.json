@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "storybook": "nx run ui:storybook --port=10000 --open",
-    "dev1": "nx run untitled:serve:development --port=10001",
+    "dev1": "nx run meeting-app:serve:development --port=10001",
     "dev2": "nx run user-profile:serve:development --port=10002"
   },
   "private": true,

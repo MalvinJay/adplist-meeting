@@ -1,7 +1,7 @@
 {
-  "name": "untitled",
+  "name": "meeting-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/untitled",
+  "sourceRoot": "apps/meeting-app",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,12 +9,12 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/untitled",
-        "outputPath": "dist/apps/untitled"
+        "root": "apps/meeting-app",
+        "outputPath": "dist/apps/meeting-app"
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/untitled"
+          "outputPath": "apps/meeting-app"
         },
         "production": {}
       }
@@ -23,16 +23,16 @@
       "executor": "@nrwl/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "untitled:build",
+        "buildTarget": "meeting-app:build",
         "dev": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "untitled:build:development",
+          "buildTarget": "meeting-app:build:development",
           "dev": true
         },
         "production": {
-          "buildTarget": "untitled:build:production",
+          "buildTarget": "meeting-app:build:production",
           "dev": false
         }
       }
@@ -40,14 +40,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "untitled:build:production"
+        "buildTarget": "meeting-app:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/untitled/jest.config.ts",
+        "jestConfig": "apps/meeting-app/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -61,7 +61,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/untitled/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/meeting-app/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
