@@ -9,3 +9,4 @@ export * from './Progress/Progress';
 export * from './Button/Button';
 export * from './Badge/Badge';
 export * from './Modal/Modal';
+export * from './Loader/Loader'
