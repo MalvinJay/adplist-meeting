@@ -1,4 +1,4 @@
-const { createGlobPatternsForDependencies } = require('@nrwl/react/tailwind');
+const { createGlobPatternsForDependencies } = require('@nrwl/next/tailwind');
 const { join } = require('path');
 
 /** @type {import('tailwindcss').Config} */
@@ -56,4 +56,5 @@ module.exports = {
       });
     },
   ],
+  presets: [require('../../tailwind-workspace-preset.js')]
 };
