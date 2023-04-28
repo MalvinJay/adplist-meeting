@@ -6,7 +6,7 @@
 
 ## Development server
 
-Run `nx serve meeting-app` for a dev server. Navigate to http://localhost:10001/. The app will automatically reload if you change any of the source files.
+Run `yarn dev1` for the meeting-app and `yarn dev2` for the user-profile app for a dev servers respectively. Navigate to http://localhost:10001/ or http://localhost:10002/. The app will automatically reload if you change any of the source files.
 
 ## Understand this workspace
 
